@@ -117,5 +117,3 @@ RegisterNetEvent('bd-bulletclub:getLeaderboard', function(difficulties)
     })
     TriggerClientEvent('bd-bulletclub:receiveLeaderboard', source, data)
 end)
-
-
