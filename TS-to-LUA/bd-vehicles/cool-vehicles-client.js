@@ -6839,22 +6839,17 @@ mainVehiclesThread()
       },
     },
     vehicleModifications = {}
-    function _0xe8b711(vehicleType) {
+    function getVehicleModsType(vehicleType) {
       var pVehicle = vehicleModifications[vehicleType]
       if (pVehicle !== undefined) {
         return pVehicle.exports
       }
-      var _0x186566 = (vehicleModifications[vehicleType] = { exports: {} })
-      mainVehiclesShtuff[vehicleType].call(
-        _0x186566.exports,
-        _0x186566,
-        _0x186566.exports,
-        _0xe8b711
-      )
-      return _0x186566.exports
+      var VehicleModificationz = (vehicleModifications[vehicleType] = { exports: {} })
+      mainVehiclesShtuff[vehicleType].call(VehicleModificationz.exports, VehicleModificationz, VehicleModificationz.exports, getVehicleModsType)
+      return VehicleModificationz.exports
     }
     ; (() => {
-      _0xe8b711.g = (function () {
+      getVehicleModsType.g = (function () {
         if (typeof globalThis === 'object') {
           return globalThis
         }
@@ -6867,12 +6862,12 @@ mainVehiclesThread()
         }
       })()
     })()
-    _0xe8b711(50)
-    _0xe8b711(957)
-    _0xe8b711(908)
-    _0xe8b711(369)
-    _0xe8b711(965)
-    _0xe8b711(302)
-    _0xe8b711(130)
-    var _0x49742f = _0xe8b711(17)
+    getVehicleModsType(50)
+    getVehicleModsType(957)
+    getVehicleModsType(908)
+    getVehicleModsType(369)
+    getVehicleModsType(965)
+    getVehicleModsType(302)
+    getVehicleModsType(130)
+    var _0x49742f = getVehicleModsType(17)
   })()
