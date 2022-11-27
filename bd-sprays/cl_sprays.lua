@@ -48,12 +48,12 @@ function calculateCoords(pEntity, pCoords)
 end
 
 function useSpraycan(pModel, pSprayCan)
-    pResult, pObj = exports["np-objects"]:PlaceObject(GetHashKey(pModel), {'collision' = false, 'groundSnap' = false, 'adjustZ' = false, 'distance' = 3, 'alignToSurface' = true, 'surfaceOffset' = 0.025, 'afterRender' = (pObject, pHit, pUseCollision) => {
-        const entFwdVector = GetEntityForwardVector(pObject);
-        const [x, y, z] = GetEntityCoords(pObject, false);
-        pHit && DrawMarker(23, x - entFwdVector[0] * 0.03, y - entFwdVector[1] * 0.03, z - entFwdVector[2] * 0.03, ...entFwdVector, 90, 0, 0, 1, 1, 1, pUseCollision ? 0 : 255, pUseCollision ? 255 : 0, 0, 50, false, false, 2, false, null, null, false), SetEntityAlpha(pObject, pHit ? 200 : 0, false);
-    }
-    -- }, (pCoords, pMaterial, pEntity, pHit) => {
+    local pResult, pObj = exports["np-objects"]:PlaceObject(GetHashKey(pModel)), {'collision' = false, 'groundSnap' = false, 'adjustZ' = false, 'distance' = 3, 'alignToSurface' = true, 'surfaceOffset' = 0.025, 'afterRender'} = (pObject, pHit, pUseCollision) then
+    local entFwdVector = GetEntityForwardVector(pObject);
+    local [x, y, z] = GetEntityCoords(pObject, false);
+        if pHit && DrawMarker(23, x - entFwdVector[0] * 0.03, y - entFwdVector[1] * 0.03, z - entFwdVector[2] * 0.03, ...entFwdVector, 90, 0, 0, 1, 1, 1, pUseCollision ? 0 : 255, pUseCollision ? 255 : 0, 0, 50, false, false, 2, false, null, null, false), SetEntityAlpha(pObject, pHit ? 200 : 0, false);
+    end
+    if (pCoords, pMaterial, pEntity, pHit) then
     --     if (GetEntityType(pHit) !== 0) return false;
     --     if (exports["np-doors"].GetCurrentDoor() !== undefined) return false;
         
