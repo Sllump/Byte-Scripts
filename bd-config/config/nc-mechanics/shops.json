@@ -1,0 +1,24 @@
+{
+    "registeredShops": {
+        "hayes_autos": {
+            "code": "hayes_autos",
+            "workingZone": ""
+        },
+        "harmony_repairs": {
+            "code": "harmony_repairs",
+            "workingZone": ""
+        },
+        "ottos_auto": {
+            "code": "ottos_auto",
+            "workingZone": ""
+        },
+        "iron_hog": {
+            "code": "iron_hog",
+            "workingZone": ""
+        },
+        "tuner": {
+            "code": "tuner",
+            "workingZone": ""
+        }
+    }
+}

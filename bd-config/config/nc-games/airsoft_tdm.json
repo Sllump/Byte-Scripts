@@ -1,0 +1,97 @@
+{
+    "maps": [
+        {
+            "id:": "cafe_redemption",
+            "name": "Cafe Redemption",
+            "polyzone": {
+                "center": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "radius": 0,
+                "useZ": false,
+                "minZ": 0,
+                "maxZ": 0
+            },
+            "spawns": [
+                [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                ],
+                [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                ]
+            ]
+        },
+        {
+            "id:": "legion_square",
+            "name": "Legion Square",
+            "polyzone": {
+                "center": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "radius": 0,
+                "useZ": false,
+                "minZ": 0,
+                "maxZ": 0
+            },
+            "spawns": [
+                [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                ],
+                [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                ]
+            ]
+        },
+        {
+            "id:": "fib_plaza",
+            "name": "FIB Plaza",
+            "polyzone": {
+                "center": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "radius": 0,
+                "useZ": false,
+                "minZ": 0,
+                "maxZ": 0
+            },
+            "spawns": [
+                [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                ],
+                [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                ]
+            ]
+        }
+    ]
+}
