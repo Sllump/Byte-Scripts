@@ -4,29 +4,28 @@ function(GameModes)
     isPlaying = false
     strafe = false
 
-    local modes = {
-        easy = {
-            gameTime = 5000,
-            gameTargets = 12,
-        },
-        medium = {
-            gameTime = 2500,
-            gameTargets = 25,
-        },
-        hard = {
-            gameTime = 1000,
-            gameTargets = 50,
-        },
-        aimbot = {
-            gameTime = 500,
-            gameTargets = 100,
-        }
+local modes = {
+    easy = {
+        gameTime = 5000,
+        gameTargets = 12,
+    },
+    medium = {
+        gameTime = 2500,
+        gameTargets = 25,
+    },
+    hard = {
+        gameTime = 1000,
+        gameTargets = 50,
+    },
+    aimbot = {
+        gameTime = 500,
+        gameTargets = 100,
     }
-    local input = 'aimbot',
-        Time = 0,
-        Targets = 0,
-        Mode = nil
-end
+}
+-- local input = 'aimbot',
+--         Time = 0,
+--         Targets = 0,
+--         Mode = nil
 
 function UpdateHud()
     TriggerEvent('bd-bulletclub:updateHud', -1, [ 'Status: ' .. (isPlaying ? 'Active' : 'Pending') +  ' | Difficulty: ' .. input,  'Score: ' .. score  ])

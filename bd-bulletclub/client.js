@@ -1,19 +1,19 @@
 ;(function () {
     'use strict'
     var _0xac6993 = {
-        678: function (_0x534c9f, _0x59ee9e) {
-          Object.defineProperty(_0x59ee9e, '__esModule', { value: true })
-          _0x59ee9e.Hud =
-            _0x59ee9e.Interface =
-            _0x59ee9e.Utils =
-            _0x59ee9e.Streaming =
-            _0x59ee9e.Zones =
-            _0x59ee9e.Procedures =
-            _0x59ee9e.Events =
+        678: function (_0x534c9f, BDX) {
+          Object.defineProperty(BDX, '__esModule', { value: true })
+          BDX.Hud =
+            BDX.Interface =
+            BDX.Utils =
+            BDX.Streaming =
+            BDX.Zones =
+            BDX.Procedures =
+            BDX.Events =
               void 0
-          _0x59ee9e.Events = {
+          BDX.Events = {
             on: (_0x4af429, _0x12ba93) => {
-              return APX.Events.on(_0x4af429, _0x12ba93)
+              return APX.Events.onNet(_0x4af429, _0x12ba93)
             },
             onNet: (_0x590ec8, _0x42e66e) => {
               return APX.Events.onNet(_0x590ec8, _0x42e66e)
@@ -28,7 +28,7 @@
               return APX.Events.remove(_0x210fa4, _0x69991a)
             },
           }
-          _0x59ee9e.Procedures = {
+          BDX.Procedures = {
             register: (_0x250d48, _0x99db80) => {
               return APX.Procedures.register(_0x250d48, _0x99db80)
             },
@@ -39,7 +39,7 @@
               )
             },
           }
-          _0x59ee9e.Zones = {
+          BDX.Zones = {
             isActive: (_0x1a9aae, _0x2459cc) => {
               return APX.Zones.isActive(_0x1a9aae, _0x2459cc)
             },
@@ -88,7 +88,7 @@
               )
             },
           }
-          _0x59ee9e.Streaming = {
+          BDX.Streaming = {
             loadModel: (_0x2a80a1) => {
               return APX.Streaming.loadModel(_0x2a80a1)
             },
@@ -108,7 +108,7 @@
               return APX.Streaming.loadNamedPtfxAsset(_0x22361b)
             },
           }
-          _0x59ee9e.Utils = {
+          BDX.Utils = {
             cache: (_0x3bac3b, _0x53e624) => {
               return APX.Utils.cache(_0x3bac3b, _0x53e624)
             },
@@ -116,7 +116,7 @@
               return APX.Utils.cacheableMap(_0x569b73, _0x5ace11)
             },
             waitForCondition: (_0x46ec18, _0xa7c1fb) => {
-              return APX.Utils.waitForCondition(_0x46ec18, _0xa7c1fb)
+              return APX.Utils.waitForConditionNet(_0x46ec18, _0xa7c1fb)
             },
             getMapRange: (_0x5bb90d, _0x2adc5b, _0x1f95a9) => {
               return APX.Utils.getMapRange(_0x5bb90d, _0x2adc5b, _0x1f95a9)
@@ -134,7 +134,7 @@
               return APX.Utils.getRandomNumber(_0x5bb79e, _0x39625e)
             },
           }
-          _0x59ee9e.Interface = {
+          BDX.Interface = {
             addPeekEntryByModel: (_0x54dcee, _0xa2bab3, _0x2f031f) => {
               return APX.Interface.addPeekEntryByModel(
                 _0x54dcee,
@@ -170,7 +170,7 @@
               )
             },
             phoneConfirmation: (_0x16a8ed, _0x39aeae, _0x5d0910) => {
-              return APX.Interface.phoneConfirmation(
+              return APX.Interface.phoneConfirmationNet(
                 _0x16a8ed,
                 _0x39aeae,
                 _0x5d0910
@@ -182,7 +182,7 @@
               _0x4d63f6,
               _0x1bc1b2 = true
             ) => {
-              return APX.Interface.phoneNotification(
+              return APX.Interface.phoneNotificationNet(
                 _0x57b989,
                 _0x130f0e,
                 _0x4d63f6,
@@ -190,7 +190,7 @@
               )
             },
           }
-          _0x59ee9e.Hud = {
+          BDX.Hud = {
             createBlip: (_0xc4c11f, ..._0x515cbb) => {
               return APX.Hud.createBlip(_0xc4c11f, ..._0x515cbb)
             },
@@ -398,7 +398,7 @@
           return globalThis
         }
         try {
-          return this || new Function('return this')()
+          return this || new FunctionNet('return this')()
         } catch (_0x5cf35d) {
           if (typeof window === 'object') {
             return window
@@ -418,86 +418,69 @@
         _0x2b4ee2 = null,
         _0x5971ad = 0
       const _0x1b1ac3 = new Set(),
-        _0x1e05ce = {
+        Weapon1 = {
           name: 'Airsoft Gun',
           item: '-2084633992',
         },
-        _0x302bff = {
+        Weapon2 = {
           name: 'FN FNX-45',
           item: '1593441988',
         },
-        _0x50e666 = {
+        Weapon3 = {
           name: 'Desert Eagle',
           item: '-1716589765',
         },
-        _0xf2c705 = [_0x1e05ce, _0x302bff, _0x50e666]
-      _0x38b1ca.Events.onNet(
-        'arp-bulletclub:gameStarted',
-        (_0x5ad20c, _0x4fdc60, _0x5884b1) => {
+        _0xf2c705 = [Weapon1, Weapon2, Weapon3]
+
+      onNet('arp-bulletclub:gameStarted', (_0x5ad20c, _0x4fdc60, _0x5884b1) => {
           return _0x278f2e(_0x5ad20c, _0x4fdc60, _0x5884b1)
         }
       )
-      _0x38b1ca.Events.on('arp-bulletclub:startGame', () => {
-        const _0x3c9078 = GetPlayerServerId(PlayerId())
-        return _0x38b1ca.Events.emitNet('arp-bulletclub:startGame', _0x3c9078)
+      
+      onNet('arp-bulletclub:startGame', () => {
+        const PlayerID = GetPlayerServerId(PlayerId())
+        return emitNet('arp-bulletclub:startGame', PlayerID)
       })
-      _0x38b1ca.Events.on('arp-bulletclub:modifySettings', () => {
+
+      onNet('arp-bulletclub:modifySettings', () => {
         return _0x12898d()
       })
-      _0x38b1ca.Events.on('arp-bulletclub:viewLeaderBoard', (_0x11fb49) => {
+      onNet('arp-bulletclub:viewLeaderBoard', (_0x11fb49) => {
         _0x4890c3(_0x11fb49.type)
       })
-      _0x38b1ca.Events.onNet('arp-bulletclub:getWeapon', () => {
+
+      onNet('arp-bulletclub:getWeapon', () => {
         _0xc88e74()
       })
-      _0x38b1ca.Events.on('arp-bulletclub:resetGameState', () => {
-        _0x38b1ca.Events.emitNet('arp-bulletclub:resetGameState')
+
+      onNet('arp-bulletclub:resetGameState', () => {
+        emitNet('arp-bulletclub:resetGameState')
       })
-      _0x38b1ca.Events.onNet('arp-bulletclub:gameReset', () => {
+
+      onNet('arp-bulletclub:gameReset', () => {
         _0x1ed868()
       })
-      RegisterInterfaceCallback(
-        'arp-bulletclub:purchaseWeapon',
-        (_0x396fca, _0x3c4f20) => {
-          const _0x4470e0 = {
-              ok: true,
-              message: 'done',
-            },
-            _0x7d11ee = {
-              data: {},
-              meta: _0x4470e0,
-            }
+
+      RegisterInterfaceCallback('arp-bulletclub:purchaseWeapon', (_0x396fca, _0x3c4f20) => {
+          const _0x4470e0 = { ok: true, message: 'done' },
+            _0x7d11ee = { data: {}, meta: _0x4470e0 }
           _0x3c4f20(_0x7d11ee)
-          const _0x15d183 = _0x518d14.g.exports[
-            'arp-inventory'
-          ].GetItemsByItemMetaKV(_0x396fca?.key?.weapon, 'BulletClub', true)
-          if (_0x15d183.length > 0) {
+          const GetItemMeta = exports['arp-inventory'].GetItemsByItemMetaKV(_0x396fca?.key?.weapon, 'BulletClub', true)
+          if (GetItemMeta.length > 0) {
             return emit('DoLongHudText', 'You already have this weapon.', 2)
           }
-          const _0x580ce9 = {
-            BulletClub: true,
-            _hideKeys: ['BulletClub'],
-          }
+          const _0x580ce9 = { BulletClub: true, _hideKeys: ['BulletClub']}
           emit(
-            'player:receiveItem',
-            _0x396fca?.key?.weapon,
-            1,
-            false,
-            _0x580ce9,
-            JSON.stringify({})
-          )
+            'player:receiveItem', _0x396fca?.key?.weapon, 1, false, _0x580ce9, JSON.stringify({}))
         }
       )
+
       onNet('arp-bulletclub:updateHud', (_0x21a871) => {
         if (!_0x3d9643('bullet_club')) {
           return
         }
-        const _0x2caba9 = {
-          show: true,
-          title: 'Bullet Club Range',
-          values: _0x21a871,
-        }
-        _0x518d14.g.exports['arp-interface'].sendAppEvent('status-hud', _0x2caba9)
+        const _0x2caba9 = { show: true, title: 'Bullet Club Range', values: _0x21a871, }
+        exports['arp-interface'].sendAppEvent('status-hud', _0x2caba9)
       })
       onNet('current-items', () => {
         if (_0x3d9643('bullet_club')) {
@@ -505,7 +488,7 @@
         }
         _0x450127()
       })
-      const _0x3af51e = [
+      const TargetPeds = [
           'cs_orleans',
           'cs_old_man2',
           's_m_m_movalien_01',
@@ -516,9 +499,10 @@
           'g_f_y_families_01',
           'g_m_m_chicold_01',
         ],
+
         _0x278f2e = async (_0x3531be, _0x2e82bb, _0x34dd06) => {
-          for (let _0x555b59 = 0; _0x555b59 < _0x3af51e.length; _0x555b59++) {
-            await _0x38b1ca.Streaming.loadModel(_0x3af51e[_0x555b59])
+          for (let _0x555b59 = 0; _0x555b59 < TargetPeds.length; _0x555b59++) {
+            await _0x38b1ca.Streaming.loadModel(TargetPeds[_0x555b59])
           }
           const _0x4618e2 = _0x54a5e1(_0x3531be)
           PlaySoundFrontend(
@@ -561,13 +545,13 @@
             if (_0x2b4ee2 && IsEntityDead(_0x2b4ee2)) {
               if (GetPedSourceOfDeath(_0x2b4ee2) === PlayerPedId()) {
                 _0x576290 += 1
-                _0x38b1ca.Events.emitNet('arp-bulletclub:targetKilled')
+                emitNet('arp-bulletclub:targetKilled')
               }
               DeleteEntity(_0x2b4ee2)
               _0x2b4ee2 = null
               const _0x14f44b = _0x17f261(_0x4618e2, _0x34dd06)
               _0x4618e2.splice(_0x14f44b, 1)
-              _0x38b1ca.Events.emitNet(
+              emitNet(
                 'arp-bulletclub:updateEnemiesRemaining',
                 _0x4618e2.length
               )
@@ -576,7 +560,7 @@
               DeleteEntity(_0x2b4ee2)
               const _0x294bd7 = _0x17f261(_0x4618e2, _0x34dd06)
               _0x4618e2.splice(_0x294bd7, 1)
-              _0x38b1ca.Events.emitNet(
+              emitNet(
                 'arp-bulletclub:updateEnemiesRemaining',
                 _0x4618e2.length
               )
@@ -589,12 +573,12 @@
               DeleteEntity(_0x2b4ee2)
               emit('DoLongHudText', 'Completed! Score: ' + _0x576290, 1, 12000)
               const _0x5743e6 = GetPlayerServerId(PlayerId())
-              _0x38b1ca.Events.emitNet(
+              emitNet(
                 'arp-bulletclub:gameCompleted',
                 _0x5743e6,
                 _0x576290
               )
-              _0x38b1ca.Events.emitNet(
+              emitNet(
                 'arp-bulletclub:updateEnemiesRemaining',
                 _0x4618e2.length
               )
@@ -603,6 +587,7 @@
             }
           }, 100)
         },
+        
         _0x12898d = async () => {
           let _0x2147dc
           const _0x39fa20 = {
@@ -644,7 +629,7 @@
               options: [_0x42055b, _0x2bcc81],
             },
             _0x1253f2 = [_0x4c5147, _0x10fb2d],
-            _0x42dcf0 = await _0x518d14.g.exports['arp-interface'].OpenInputMenu(
+            _0x42dcf0 = await exports['arp-interface'].OpenInputMenu(
               _0x1253f2
             )
           if (!_0x42dcf0) {
@@ -659,8 +644,9 @@
               difficulty: _0x48deb9,
               strafeEnabled: _0x4168aa,
             }
-          _0x38b1ca.Events.emitNet('arp-bulletclub:updateSettings', _0x4090bb)
+          emitNet('arp-bulletclub:updateSettings', _0x4090bb)
         },
+
         _0x4890c3 = async (_0x566cdf) => {
           const _0x24f0f5 = await _0x38b1ca.Procedures.execute(
               'arp-bulletclub:getLeaderBoard',
@@ -688,8 +674,9 @@
               title: 'Leaderboard (' + _0x3e967b + ')',
             }
           _0x3cbfda.unshift(_0x474f4e)
-          _0x518d14.g.exports['arp-interface'].showContextMenu(_0x3cbfda)
+          exports['arp-interface'].showContextMenu(_0x3cbfda)
         },
+
         _0xc88e74 = () => {
           const _0x18d817 = [],
             _0x349ca3 = {
@@ -706,12 +693,13 @@
             }
             _0x18d817.push(_0xfe183a)
           }
-          _0x518d14.g.exports['arp-interface'].showContextMenu(_0x18d817)
+          exports['arp-interface'].showContextMenu(_0x18d817)
         },
+
         _0x450127 = () => {
           let _0x3110c1 = false
           for (const _0x55c525 of _0xf2c705) {
-            const _0x5e7a1a = _0x518d14.g.exports[
+            const _0x5e7a1a = exports[
               'arp-inventory'
             ].GetItemsByItemMetaKV(_0x55c525.item, 'BulletClub', true)
             _0x5e7a1a.length > 0 &&
@@ -730,30 +718,35 @@
         _0x3d9643 = (_0x569395) => {
           return _0x1b1ac3.has(_0x569395)
         }
-      on('arp-polyzone:enter', (_0x27dff7) => {
+      onNet('arp-polyzone:enter', (_0x27dff7) => {
         _0x1b1ac3.add(_0x27dff7)
       })
-      on('arp-polyzone:exit', (_0x40fc2) => {
+
+
+      onNet('arp-polyzone:exit', (_0x40fc2) => {
         _0x1b1ac3.delete(_0x40fc2)
       })
-      on('arp-polyzone:enter', (_0x38da11) => {
+
+      onNet('arp-polyzone:enter', (_0x38da11) => {
         if (_0x38da11 !== 'bullet_club') {
           return
         }
-        _0x38b1ca.Events.emitNet('arp-bulletclub:enteredBuilding')
+        emitNet('arp-bulletclub:enteredBuilding')
         SetPedInfiniteAmmoClip(PlayerPedId(), true)
       })
-      on('arp-polyzone:exit', (_0x587634) => {
-        if (_0x587634 !== 'bullet_club') {
-          return
-        }
-        _0x518d14.g.exports['arp-interface'].sendAppEvent('status-hud', _0x208bee)
+
+      onNet('arp-polyzone:exit', (_0x587634) => {
+          if (_0x587634 !== 'bullet_club') {
+            return
+          }
+        exports['arp-interface'].sendAppEvent('status-hud', _0x208bee)
         SetPedInfiniteAmmoClip(PlayerPedId(), false)
         _0x450127()
       })
+
       const _0x17f261 = (_0x218b36, _0x336906) => {
           const _0x398e87 =
-              _0x3af51e[Math.floor(Math.random() * _0x3af51e.length)],
+              TargetPeds[Math.floor(Math.random() * TargetPeds.length)],
             _0x8affc = Math.floor(Math.random() * _0x218b36.length),
             _0x1e8fee = _0x218b36[_0x8affc]
           if (!_0x1e8fee) {
@@ -772,7 +765,7 @@
           _0x5971ad = GetGameTimer()
           SetBlockingOfNonTemporaryEvents(_0x2b4ee2, true)
           if (!_0x336906) {
-            FreezeEntityPosition(_0x2b4ee2, true)
+            FreezeEntityPositionNet(_0x2b4ee2, true)
           }
           PlaySoundFrontend(-1, 'CONFIRM_BEEP', 'HUD_MINI_GAME_SOUNDSET', false)
           if (_0x336906) {
@@ -861,7 +854,7 @@
               data: { id: 'bullet_club' },
               debugPoly: false,
             }
-          _0x518d14.g.exports['arp-polyzone'].AddBoxZone(
+          exports['arp-polyzone'].AddBoxZone(
             'bullet_club',
             _0x3d9631,
             22.9,
@@ -880,7 +873,7 @@
               data: { id: 'bullet_club_controls' },
               debugPoly: false,
             }
-          _0x518d14.g.exports['arp-polytarget'].AddBoxZone(
+          exports['arp-polytarget'].AddBoxZone(
             'bullet_club_controls',
             _0x3e78ec,
             3.85,
@@ -899,7 +892,7 @@
               data: { id: 'bullet_club_leaderboards' },
               debugPoly: false,
             }
-          _0x518d14.g.exports['arp-polytarget'].AddBoxZone(
+          exports['arp-polytarget'].AddBoxZone(
             'bullet_club_leaderboards',
             _0x63a7be,
             1.5,
@@ -916,7 +909,7 @@
               label: 'Start Game ($500)',
             },
             _0x47f55f = { distance: { radius: 3.5 } }
-          _0x518d14.g.exports['arp-interact'].AddPeekEntryByPolyTarget(
+          exports['arp-interact'].AddPeekEntryByPolyTarget(
             'bullet_club_controls',
             [_0x4c168d],
             _0x47f55f
@@ -927,13 +920,13 @@
             icon: 'exclamation',
             label: 'Force Reset Game',
           }
-          _0x518d14.g.exports['arp-interact'].AddPeekEntryByPolyTarget(
+          exports['arp-interact'].AddPeekEntryByPolyTarget(
             'bullet_club_controls',
             [_0x51840],
             {
               distance: { radius: 3.5 },
               isEnabled: async () => {
-                const _0xd5045e = await _0x518d14.g.exports[
+                const _0xd5045e = await exports[
                   'arp-business'
                 ].IsEmployedAt('the_bullet_club')
                 return _0xd5045e
@@ -946,13 +939,13 @@
             icon: 'cog',
             label: 'Change Settings',
           }
-          _0x518d14.g.exports['arp-interact'].AddPeekEntryByPolyTarget(
+          exports['arp-interact'].AddPeekEntryByPolyTarget(
             'bullet_club_controls',
             [_0x7be691],
             {
               distance: { radius: 3.5 },
               isEnabled: async () => {
-                const _0x2faa0a = await _0x518d14.g.exports[
+                const _0x2faa0a = await exports[
                   'arp-business'
                 ].IsEmployedAt('the_bullet_club')
                 return _0x2faa0a
@@ -965,7 +958,7 @@
             icon: 'hand-paper',
             label: 'Get Weapon',
           }
-          _0x518d14.g.exports['arp-interact'].AddPeekEntryByPolyTarget(
+          exports['arp-interact'].AddPeekEntryByPolyTarget(
             'bullet_club_controls',
             [_0x4acabc],
             _0x47f55f
@@ -998,7 +991,7 @@
               label: 'Leaderboard (Aimbot)',
               parameters: { type: 'aimbot' },
             }
-          _0x518d14.g.exports['arp-interact'].AddPeekEntryByPolyTarget(
+          exports['arp-interact'].AddPeekEntryByPolyTarget(
             'bullet_club_leaderboards',
             [_0x5b2891, _0x2154d5, _0x59eb2c, _0x377aa2],
             _0x47f55f
