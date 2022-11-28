@@ -1,0 +1,103 @@
+REPAIR_STATIONS = {
+    ["bennys"] = {
+        coords = vector3(-34.262599945068, -1051.0944824219, 27.674102783203),
+        heading = 50.155,
+        repairs = true,
+        mods = true,
+        passes = {'all'},
+    },
+    ["boat"] = {
+        coords = vector3(-812.04241943359, -1425.1461181641, 0.0),
+        heading = 33.155,
+        repairs = true,
+        mods = true,
+        passes = {'all'},
+    },
+    ["lost"] = {
+        coords = vector3(964.70886230469, -108.23356628418, 73.35594940185),
+        heading = 221.374,
+        repairs = true,
+        mods = true,
+        passes = {'all'},
+    },
+    ["envys"] = {
+        coords = vector3(936.97302246094, -970.91540527344, 39.543067932129),  
+        heading = 272.66046142578,
+        repairs = true,
+        mods = true,
+        passes = {'all'},
+    },
+    ["auto_exotics"] = {
+        coords = vector3(545.04833984375, -189.2868347168, 53.888919830322),
+        heading = 89.760070800781,
+        repairs = true,
+        mods = true,
+        passes = {'all'},
+    },
+    ["hayes_auto"] = {
+        coords = vector3(-1423.7171630859, -450.04702758789, 35.305015563965),
+        heading = 31.565382003784,
+        repairs = true,
+        mods = true,
+        passes = {'all'},
+    },
+    ["tuner_shop"] = {
+        coords = vector3(135.98333740234, -3030.6997070313, 6.4362530708313),
+        heading = 0.2081,
+        repairs = true,
+        mods = true,
+        passes = {'all'},
+    },
+    ["police"] = {
+        coords = vector3(435.25637817383, -976.03381347656, 25.094762802124),
+        heading = 89.977966308594,
+        repairs = true,
+        mods = true,
+        free = true,
+        passes = {'police'},
+    },
+    ["higgins"] = {
+        coords = vector3(-735.58270263672, -1456.0739746094, 5.0005207061768),
+        heading = 206.4908,
+        repairs = true,
+        mods = true,
+        heli = 'true',
+        passes = {'all'},
+    },
+    ["ls_customs"] = {
+        coords = vector3(-338.88427734375, -138.87174987793, 38.404266357422),
+        heading = 68.757,
+        repairs = true,
+        mods = true,
+        passes = {'all'},
+    },
+    ["fbi"] = {
+        coords = vector3(-1835.4382324219, 4522.6513671875, 5.2927603721619),
+        heading = 15.757,
+        repairs = true,
+        mods = true,
+        passes = {'all'},
+    },
+    ["airport"] = {
+        coords = vector3(-1653.4033203125, -3145.0146484375, 13.991268157959),
+        heading = 206.4908,
+        repairs = true,
+        mods = true,
+        heli = true,
+        passes = {'all'},
+    },
+    ["paleto"] = {
+        coords = vector3(110.20879364014, 6627.1923828125, 31.787305831909),
+        heading = 226.318,
+        repairs = true,
+        mods = true,
+        passes = {'all'}
+    },
+    ["harmony"] = {
+        coords = vector3(1174.6394042969, 2639.9177246094, 37.753932952881),
+        heading = 357.92239379883,
+        repairs = true,
+        mods = true,
+        passes = {'all'}
+    }
+}
