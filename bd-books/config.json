@@ -1,0 +1,46 @@
+{
+    "pacific": {
+        "type": "contract",
+        "photo1": "https://imgur.com/42drqSA.png",
+        "photo2": "https://imgur.com/HMCHlvN.png",
+        "designationStamp": "https://imgur.com/6zfsNzU.png",
+        "contractNo": "MCMZCIC.VI",
+        "contractName": "Pacific City Bank",
+        "targetName": "Pacific Bank",
+        "location": "Pacific",
+        "optional": true,
+        "optionalMain": "Team Uniform (Optional)",
+        "optionalMap": [
+            {"msg": "Jacket 1"},
+            {"msg": "Jacket 2"},
+            {"msg": "Jacket 3"}
+        ],
+        "messages": [
+            {"msg": "Your crew will rob the Bay City Bank under the following conditions:"},
+            {"msg": "- You will rob the bank under the guise of filming the movie: HARD TO KILL"},
+            {"msg": "- You will designate a directo, the action star, actors, and film crew. You may use hostages to be extrasor film crew. You are encourage to involve officers in roles if they are willing."},
+            {"msg": "- After the robbery is done, you are to film and escape scene worthy of an action blockbuster movie."},
+            {"msg": "- Lose any chasing PD"},
+            {"msg": "This contract can only be marked complete when you return home with the take AND this document."}
+        ]
+    },
+    "comic" : {
+        "type": "comic",
+        "frontPage": "https://imgur.com/PEdkyzp.jpg",
+        "backFrontPage": "https://imgur.com/PEdkyzp.jpg",
+        "frontBackPage": "https://imgur.com/PEdkyzp.jpg",
+        "backPage": "https://imgur.com/PEdkyzp.jpg",
+        "pages": [
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"},
+            {"img": "https://imgur.com/rjdCy5w.png"}
+        ]
+    }
+}
