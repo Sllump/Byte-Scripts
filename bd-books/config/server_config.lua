@@ -21,15 +21,4 @@ Citizen.CreateThread(function()
             }
         TriggerClientEvent('bd-books:openBookByMetadata', source, book)
     end)
-
-        -- -- QBCore.RegisterUsableItem('book', function(source, item)
-        --     TriggerClientEvent('bd-books:opencontract', source, item.contract)
-        -- end)
-
-    RegisterCommand('createBook', function(source, args, raw)
-        local player = PlayerPedId()
-		if Player ~= nil then
-            TriggerEvent('player:receiveItem', 'book', 1, false, {contract = args[1]})
-        end
-    end, false)
 end)

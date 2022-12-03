@@ -1,8 +1,6 @@
 fx_version 'cerulean'
 games {'rdr3', 'gta5'}
-author 'Palacios'
-description 'Books Script'
-version '1.2.0'
+author 'Byte Development'
 lua54 'yes'
 
 shared_scripts {
@@ -22,6 +20,7 @@ server_scripts {
 }
 
 ui_page 'build/index.html'
+
 files {
     'config.json',
     'build/index.html',
@@ -29,8 +28,4 @@ files {
     'build/static/css/*.css',
     'build/static/media/*.svg',
     'build/static/media/*.mp3',
-}
-
-escrow_ignore { 
-    'config/*.lua'
 }

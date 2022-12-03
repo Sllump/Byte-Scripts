@@ -76,7 +76,7 @@ export const Book = () => {
     }, [open, setOpen])
 
     useNuiEvent('bd-books:setcontract', (data) => {
-        setBook(data.contrato)
+        setBook(data.contract)
         setOpen(true)
     })
 
