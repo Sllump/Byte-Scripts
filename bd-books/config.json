@@ -24,6 +24,60 @@
             {"msg": "This contract can only be marked complete when you return home with the take AND this document."}
         ]
     },
+    "booster": {
+        "type": "contract",
+        "photo1": "https://imgur.com/42drqSA.png",
+        "photo2": "https://cdn.discordapp.com/attachments/1000197346619039895/1010634976162762962/unknown.png",
+        "designationStamp": "https://imgur.com/6zfsNzU.png",
+        "contractNo": "00012993842",
+        "contractName": "S+ Car Boost",
+        "targetName": "Audi R8 Hycade",
+        "location": "Pacific",
+        "optional": true,
+        "optionalMain": "",
+        "optionalMap": [
+            {"msg": ""},
+            {"msg": ""},
+            {"msg": ""}
+        ],
+        "messages": [
+            {"msg": "Your crew will find the Audi R8 Hycade needed to boost under these conditions:"},
+            {"msg": "- You will not harm any civilians along the way, as this is a incognito contract."},
+            {"msg": "- Only you and 3 members of your crew is allowed to do the contract for payout."},
+            {"msg": "- Lose any of the PD that is chasing you."},
+            {"msg": "- Failure to lose PD and bringing them to the location you will be blacklisted from all other contracts."},
+            {"msg": "- After the boost is done, bring the car to the scrap yard in Sandy Shores."},
+            {"msg": "- No teaming with other groups is allowed, if you are found helping another group you will be blacklisted."},
+            {"msg": "This contract can only be marked complete when you return the car to the scrap yard WITH the document."}
+        ]
+    },
+    "Crafting": {
+        "type": "contract",
+        "photo1": "https://cdn.discordapp.com/attachments/764273642057498644/1010658242558443551/unknown.png",
+        "photo2": "https://cdn.discordapp.com/attachments/764273642057498644/1010658257766981782/unknown.png",
+        "designationStamp": "https://imgur.com/6zfsNzU.png",
+        "contractNo": "00012993842",
+        "contractName": "Container Hunting",
+        "targetName": "The Big Red Container",
+        "location": "La Mesa",
+        "optional": true,
+        "optionalMain": "Requirements",
+        "optionalMap": [
+            {"msg": "A key"},
+            {"msg": "300 Plastic"},
+            {"msg": "Common Sense"}
+        ],
+        "messages": [
+            {"msg": "You have an oppertunity to come across a gun crafting bench, you must follow these terms:"},
+            {"msg": "- If you find the weapon bench, you must keep it to yourself and safe gaurd it."},
+            {"msg": "- You require a special key that a cop is holding on him, Find the Cop, Kill him, and Rob him!"},
+            {"msg": "- Lose any of the PD that is chasing you."},
+            {"msg": "- Failure to lose PD and bringing them to the location you will be blacklisted from all other contracts."},
+            {"msg": "- After the container and the key is found, you must bring the key and materials to the location."},
+            {"msg": "- No teaming with other groups is allowed, if you are found helping another group you will be blacklisted."},
+            {"msg": "This contract can only be marked complete when you return the Document, the key, and bring some materials."}
+        ]
+    },
     "comic" : {
         "type": "comic",
         "frontPage": "https://imgur.com/PEdkyzp.jpg",
