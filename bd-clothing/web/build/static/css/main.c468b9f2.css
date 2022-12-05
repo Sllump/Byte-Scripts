@@ -1,0 +1,527 @@
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap);
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    height: 100vh;
+    margin: 0
+}
+
+#root {
+    height: 100%
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
+}
+
+body {
+    font-family: Oswald, sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.nui-wrapper {
+    height: 100%
+}
+
+.buttonContainer,
+.nui-wrapper {
+    display: flex;
+    flex-direction: row
+}
+
+.buttonContainer {
+    bottom: 0;
+    left: 35%;
+    margin-top: auto;
+    position: absolute;
+    z-index: 2
+}
+
+.buttonContainer .otherOption {
+    margin-bottom: 35px;
+    margin-left: -20px;
+    margin-top: auto
+}
+
+.toggleContainer {
+    display: flex;
+    flex: 50% 1;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-top: auto;
+    z-index: 2
+}
+
+.toggleContainer h3 {
+    text-shadow: 0 0 2px #000
+}
+
+.toggleContainer .togglesRow {
+    display: flex;
+    flex-direction: row
+}
+
+.toggleContainer .togglesRow .toggle {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 16px;
+    margin-top: -14px;
+    text-shadow: 0 0 2px #000;
+    text-transform: uppercase
+}
+
+.toggleContainer .togglesRow .toggle .option {
+    background: hsla(0, 0%, 100%, .12);
+    border: 1.5px solid hsla(0, 0%, 100%, .12);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 10px 12px
+}
+
+.toggleContainer .togglesRow .toggle .option .insideRect {
+    background: #474d5d;
+    border-radius: 4px;
+    height: 6px;
+    width: 26px
+}
+
+.toggleContainer .togglesRow .toggle .option .insideHex {
+    bottom: 36px;
+    position: absolute
+}
+
+.mainMenu {
+    color: #fff;
+    display: flex;
+    padding-bottom: 30px
+}
+
+.mainMenu .blocker.true {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 101
+}
+
+.mainMenu .mainMenuBg {
+    background: linear-gradient(89.87deg, rgba(43, 57, 98, .01) .12%, #21548f 13.39%, #0077ff 99.88%);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1
+}
+
+.mainMenu .menu {
+    margin-right: 12px;
+    margin-top: 32px;
+    overflow: auto !important;
+    padding-right: 40px;
+    z-index: 50
+}
+
+.mainMenu .menu .somefuckingdogshit {
+    font-family: Oswald;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: right;
+    text-transform: uppercase
+}
+
+.mainMenu .menu .somefuckingdogshit span {
+    color: hsla(0, 0%, 100%, .5);
+    display: block;
+    font-size: 18px;
+    margin-bottom: 40px
+}
+
+.mainMenu .menu .menuOptions {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-left: 115px;
+    z-index: 10
+}
+
+.mainMenu .menu .menuOptions .parentOption {
+    margin-top: 24px
+}
+
+.mainMenu .menu .menuOptions span {
+    color: #fff;
+    font-family: Oswald;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400
+}
+
+.design {
+    overflow: hidden;
+    z-index: 50
+}
+
+.design .one {
+    right: 0
+}
+
+.design .one,
+.design .two {
+    bottom: 0;
+    position: absolute
+}
+
+.design .two {
+    right: 510px
+}
+
+.design .three {
+    position: absolute;
+    right: 475px
+}
+
+.design .five,
+.design .four {
+    position: absolute;
+    right: 0
+}
+
+.design .five {
+    bottom: 0
+}
+
+h3 {
+    color: #fff;
+    font-family: Oswald;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400
+}
+
+.optionGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 570px
+}
+
+.optionDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px
+}
+
+.optionDiv.bumpUp {
+    margin-top: 3px
+}
+
+.optionDiv.bumpDown {
+    margin-top: 33px
+}
+
+.optionDiv .optionText {
+    color: #fff;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96.2%;
+    margin-bottom: 12px;
+    opacity: .8;
+    text-transform: capitalize
+}
+
+.optionDiv .leftRight {
+    -ms-scroll-chaining: none;
+    align-items: center;
+    background: hsla(0, 0%, 100%, .12);
+    border: 1.5px solid hsla(0, 0%, 100%, .12);
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overscroll-behavior: contain;
+    padding: 14px 21px;
+    width: 250px
+}
+
+.optionDiv .leftRight.long {
+    width: 570px
+}
+
+.optionDiv .leftRight.medium {
+    width: 503.5px
+}
+
+.optionDiv .leftRight .optionNumber {
+    all: unset;
+    color: #fff;
+    font-family: Oswald;
+    font-size: 24px;
+    line-height: 96.2%;
+    text-align: center
+}
+
+.optionDiv .leftRightScroll {
+    align-items: center;
+    background: hsla(0, 0%, 100%, .12);
+    border: 1.5px solid hsla(0, 0%, 100%, .12);
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 250px
+}
+
+.optionDiv .leftRightScroll.long {
+    width: 529px
+}
+
+.optionDiv .leftRightScroll .backdrop {
+    border-radius: 4px;
+    height: 6px;
+    width: 226px
+}
+
+.optionDiv .leftRightScroll .backdrop.long {
+    width: 496px
+}
+
+.optionDiv .leftRightScroll .backdrop input[type=range] {
+    -webkit-appearance: none;
+    background: hsla(0, 0%, 100%, .16);
+    border-radius: 4px;
+    bottom: 13px;
+    height: 6px;
+    position: relative;
+    -webkit-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+    width: 225px
+}
+
+.optionDiv .leftRightScroll .backdrop input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 20px;
+    -webkit-user-select: auto;
+    user-select: auto
+}
+
+.optionDiv .leftRightScroll .backdrop input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-image: url(/web/build/static/media/Polygon114.0b3ec4da6a82a54b8a9b.svg);
+    cursor: pointer;
+    height: 22px;
+    -webkit-user-select: auto;
+    user-select: auto;
+    width: 20px
+}
+
+.optionDiv .leftRightScroll .backdrop .progressHex {
+    bottom: 33px;
+    left: 94%;
+    pointer-events: none;
+    position: relative;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1
+}
+
+.optionDiv .leftRightScroll .progress {
+    background: linear-gradient(90deg, #4e65a7 -1.57%, #56fdfd 102.99%);
+    border-radius: 4px;
+    height: 6px;
+    width: 100%
+}
+
+.removeTat {
+    align-items: center;
+    background: hsla(0, 0%, 100%, .12);
+    border: 1.5px solid hsla(0, 0%, 100%, .12);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #57f9fa;
+    display: flex;
+    justify-content: center;
+    margin-left: 16px;
+    padding: 0 15.25px
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px
+}
+
+.addTat {
+    align-items: center;
+    background: hsla(0, 0%, 100%, .12);
+    border: 1.5px solid hsla(0, 0%, 100%, .12);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 96.2%;
+    margin-top: 24px;
+    padding: 8px;
+    text-align: center;
+    width: 41px
+}
+
+.rightContainer {
+    background: hsla(0, 0%, 100%, .1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+    z-index: 51
+}
+
+.rightContainer svg {
+    stroke: url(#paint0_linear_302_442);
+    stroke-opacity: .45;
+    stroke-width: 2;
+    margin-top: 20px;
+    z-index: 52
+}
+
+.rightContainer svg.active .before {
+    display: none
+}
+
+.rightContainer svg.active .active {
+    display: block
+}
+
+.rightContainer svg .active {
+    display: none
+}
+
+.fade-enter {
+    opacity: 0
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity .2s
+}
+
+.fade-exit {
+    opacity: 1
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity .2s
+}
+
+::-webkit-scrollbar {
+    width: 3px
+}
+
+::-webkit-scrollbar-track {
+    background: none
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsla(0, 0%, 100%, .2);
+    border-radius: 3px
+}
+
+.colorPicker {
+    -webkit-backdrop-filter: blur(28px);
+    backdrop-filter: blur(28px);
+    background: hsla(0, 0%, 100%, .05);
+    border: 1px solid hsla(0, 0%, 46%, .4);
+    box-shadow: 0 2px 21px rgba(0, 0, 0, .37);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 411px;
+    z-index: 500
+}
+
+.colorPicker .header {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-family: Oswald;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    padding: 10px 24px
+}
+
+.colorPicker .options {
+    background: hsla(0, 0%, 100%, .05);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 24px 24px
+}
+
+.colorPicker .options .hexagon {
+    margin-left: 5px;
+    margin-top: 5px
+}
+
+.fadeWee-enter {
+    opacity: 0;
+    -webkit-transform: scale(.9);
+    transform: scale(.9)
+}
+
+.fadeWee-enter-active {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s, -webkit-transform .3s
+}
+
+.fadeWee-exit {
+    opacity: 1
+}
+
+.fadeWee-exit-active {
+    opacity: 0;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+    transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s, -webkit-transform .3s
+}

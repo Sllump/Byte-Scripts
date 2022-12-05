@@ -1,0 +1,12 @@
+{
+    "files": {
+        "main.css": "/web/build/static/css/main.c468b9f2.css",
+        "main.js": "/web/build/static/js/main.23a22294.js",
+        "static/media/Polygon114.svg": "/web/build/static/media/Polygon114.0b3ec4da6a82a54b8a9b.svg",
+        "index.html": "/web/build/index.html"
+    },
+    "entrypoints": [
+        "static/css/main.c468b9f2.css",
+        "static/js/main.23a22294.js"
+    ]
+}
