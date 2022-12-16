@@ -1,8 +1,5 @@
 ;(function () {
-    var _0x45fa42 = {}
     !(function () {
-      var _0xf087b6 = _0x45fa42,
-        _0x3f7b2d
       _0x3f7b2d = { value: true }
       const _0x5c080c = _0x518d14(615),
         _0x38b1ca = _0x518d14(678)
