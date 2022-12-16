@@ -1,411 +1,4 @@
 ;(function () {
-    'use strict'
-    var _0xac6993 = {
-        678: function (_0x534c9f, BDX) {
-          Object.defineProperty(BDX, '__esModule', { value: true })
-          BDX.Hud =
-            BDX.Interface =
-            BDX.Utils =
-            BDX.Streaming =
-            BDX.Zones =
-            BDX.Procedures =
-            BDX.Events =
-              void 0
-          BDX.Events = {
-            on: (_0x4af429, _0x12ba93) => {
-              return APX.Events.onNet(_0x4af429, _0x12ba93)
-            },
-            onNet: (_0x590ec8, _0x42e66e) => {
-              return APX.Events.onNet(_0x590ec8, _0x42e66e)
-            },
-            emit: (_0x48e122, ..._0x827523) => {
-              return APX.Events.emit(_0x48e122, ..._0x827523)
-            },
-            emitNet: (_0x4c7651, ..._0x56a753) => {
-              return APX.Events.emitNet(_0x4c7651, ..._0x56a753)
-            },
-            remove: (_0x210fa4, _0x69991a) => {
-              return APX.Events.remove(_0x210fa4, _0x69991a)
-            },
-          }
-          BDX.Procedures = {
-            register: (_0x250d48, _0x99db80) => {
-              return APX.Procedures.register(_0x250d48, _0x99db80)
-            },
-            execute: (_0x2063ee, ..._0x599124) => {
-              return (
-                console.log('execute', _0x2063ee, _0x599124),
-                APX.Procedures.execute(_0x2063ee, ..._0x599124)
-              )
-            },
-          }
-          BDX.Zones = {
-            isActive: (_0x1a9aae, _0x2459cc) => {
-              return APX.Zones.isActive(_0x1a9aae, _0x2459cc)
-            },
-            onEnter: (_0x2845ef, _0x9eaa89) => {
-              return APX.Zones.onEnter(_0x2845ef, _0x9eaa89)
-            },
-            onExit: (_0x47dacf, _0xfcdb30) => {
-              return APX.Zones.onExit(_0x47dacf, _0xfcdb30)
-            },
-            addBoxZone: (
-              _0xbcbd01,
-              _0x45fd32,
-              _0x177b02,
-              _0x2b5297,
-              _0x1625d8,
-              _0x57071b,
-              _0x54b51f = {}
-            ) => {
-              return APX.Zones.addBoxZone(
-                _0xbcbd01,
-                _0x45fd32,
-                _0x177b02,
-                _0x2b5297,
-                _0x1625d8,
-                _0x57071b,
-                _0x54b51f
-              )
-            },
-            addBoxTarget: (
-              _0x1499e3,
-              _0x19df11,
-              _0x1a02df,
-              _0x522eaa,
-              _0x33f5ec,
-              _0x374d54,
-              _0x528018 = {}
-            ) => {
-              return APX.Zones.addBoxTarget(
-                _0x1499e3,
-                _0x19df11,
-                _0x1a02df,
-                _0x522eaa,
-                _0x33f5ec,
-                _0x374d54,
-                _0x528018
-              )
-            },
-          }
-          BDX.Streaming = {
-            loadModel: (_0x2a80a1) => {
-              return APX.Streaming.loadModel(_0x2a80a1)
-            },
-            loadTexture: (_0x2923c5) => {
-              return APX.Streaming.loadTexture(_0x2923c5)
-            },
-            loadAnim: (_0x21c395) => {
-              return APX.Streaming.loadAnim(_0x21c395)
-            },
-            loadClipSet: (_0x5e9268) => {
-              return APX.Streaming.loadClipSet(_0x5e9268)
-            },
-            loadWeaponAsset: (_0xbf7be2, _0x294015, _0x5e144f) => {
-              return APX.Streaming.loadWeaponAsset(_0xbf7be2)
-            },
-            loadNamedPtfxAsset: (_0x22361b) => {
-              return APX.Streaming.loadNamedPtfxAsset(_0x22361b)
-            },
-          }
-          BDX.Utils = {
-            cache: (_0x3bac3b, _0x53e624) => {
-              return APX.Utils.cache(_0x3bac3b, _0x53e624)
-            },
-            cacheableMap: (_0x569b73, _0x5ace11) => {
-              return APX.Utils.cacheableMap(_0x569b73, _0x5ace11)
-            },
-            waitForCondition: (_0x46ec18, _0xa7c1fb) => {
-              return APX.Utils.waitForConditionNet(_0x46ec18, _0xa7c1fb)
-            },
-            getMapRange: (_0x5bb90d, _0x2adc5b, _0x1f95a9) => {
-              return APX.Utils.getMapRange(_0x5bb90d, _0x2adc5b, _0x1f95a9)
-            },
-            getDistance: (
-              [_0x53eca8, _0x545330, _0x140b91],
-              [_0x1e844a, _0x1642a0, _0x53dbbe]
-            ) => {
-              return APX.Utils.getDistance(
-                [_0x53eca8, _0x545330, _0x140b91],
-                [_0x1e844a, _0x1642a0, _0x53dbbe]
-              )
-            },
-            getRandomNumber: (_0x5bb79e, _0x39625e) => {
-              return APX.Utils.getRandomNumber(_0x5bb79e, _0x39625e)
-            },
-          }
-          BDX.Interface = {
-            addPeekEntryByModel: (_0x54dcee, _0xa2bab3, _0x2f031f) => {
-              return APX.Interface.addPeekEntryByModel(
-                _0x54dcee,
-                _0xa2bab3,
-                _0x2f031f
-              )
-            },
-            addPeekEntryByTarget: (_0x5f17ec, _0x2504dc, _0x482c7f) => {
-              return APX.Interface.addPeekEntryByTarget(
-                _0x5f17ec,
-                _0x2504dc,
-                _0x482c7f
-              )
-            },
-            addPeekEntryByFlag: (_0x1cc87b, _0x31884a, _0x537aec) => {
-              return APX.Interface.addPeekEntryByFlag(
-                _0x1cc87b,
-                _0x31884a,
-                _0x537aec
-              )
-            },
-            taskbar: (
-              _0x38b0de,
-              _0x13cdd1,
-              _0x5b0a19 = false,
-              _0x20fb74 = null
-            ) => {
-              return APX.Interface.taskbar(
-                _0x38b0de,
-                _0x13cdd1,
-                _0x5b0a19,
-                _0x20fb74
-              )
-            },
-            phoneConfirmation: (_0x16a8ed, _0x39aeae, _0x5d0910) => {
-              return APX.Interface.phoneConfirmationNet(
-                _0x16a8ed,
-                _0x39aeae,
-                _0x5d0910
-              )
-            },
-            phoneNotification: (
-              _0x57b989,
-              _0x130f0e,
-              _0x4d63f6,
-              _0x1bc1b2 = true
-            ) => {
-              return APX.Interface.phoneNotificationNet(
-                _0x57b989,
-                _0x130f0e,
-                _0x4d63f6,
-                _0x1bc1b2
-              )
-            },
-          }
-          BDX.Hud = {
-            createBlip: (_0xc4c11f, ..._0x515cbb) => {
-              return APX.Hud.createBlip(_0xc4c11f, ..._0x515cbb)
-            },
-            applyBlipSettings: (
-              _0x210d13,
-              _0x4d1009,
-              _0x51620d,
-              _0x11b73b,
-              _0x3e9a7e,
-              _0x4d7df3,
-              _0x24ae8f,
-              _0x39995d
-            ) => {
-              return APX.Hud.applyBlipSettings(
-                _0x210d13,
-                _0x4d1009,
-                _0x51620d,
-                _0x11b73b,
-                _0x3e9a7e,
-                _0x4d7df3,
-                _0x24ae8f,
-                _0x39995d
-              )
-            },
-          }
-        },
-        615: function (_0x5e3dae, _0x4b842a) {
-          Object.defineProperty(_0x4b842a, '__esModule', { value: true })
-          _0x4b842a.mathClass = _0x4b842a.loadAnimDict = _0x4b842a.Delay = void 0
-          let _0x38c750 = (_0x23449e) =>
-            new Promise((_0x3b68c7) => setTimeout(_0x3b68c7, _0x23449e))
-          _0x4b842a.Delay = _0x38c750
-          async function _0x602b91(_0x1b8bdb) {
-            while (!HasAnimDictLoaded(_0x1b8bdb)) {
-              RequestAnimDict(_0x1b8bdb)
-              await (0, _0x4b842a.Delay)(5)
-            }
-          }
-          _0x4b842a.loadAnimDict = _0x602b91
-          class _0x40cffd {
-            constructor(_0x54e3c7 = 0, _0x3e9b1c = 0, _0x3606f8 = 0) {
-              this.x = _0x54e3c7
-              this.y = _0x3e9b1c
-              this.z = _0x3606f8
-            }
-            ['setFromArray'](_0x245cc2) {
-              return (
-                (this.x = _0x245cc2[0]),
-                (this.y = _0x245cc2[1]),
-                (this.z = _0x245cc2[2]),
-                this
-              )
-            }
-            ['getArray']() {
-              return [this.x, this.y, this.z]
-            }
-            ['add'](_0x140bd9) {
-              return (
-                (this.x += _0x140bd9.x),
-                (this.y += _0x140bd9.y),
-                (this.z += _0x140bd9.z),
-                this
-              )
-            }
-            ['addScalar'](_0x42d127) {
-              return (
-                (this.x += _0x42d127),
-                (this.y += _0x42d127),
-                (this.z += _0x42d127),
-                this
-              )
-            }
-            ['sub'](_0x1fabf4) {
-              return (
-                (this.x -= _0x1fabf4.x),
-                (this.y -= _0x1fabf4.y),
-                (this.z -= _0x1fabf4.z),
-                this
-              )
-            }
-            ['equals'](_0x215e2d) {
-              return (
-                this.x === _0x215e2d.x &&
-                this.y === _0x215e2d.y &&
-                this.z === _0x215e2d.z
-              )
-            }
-            ['subScalar'](_0x1a2c21) {
-              return (
-                (this.x -= _0x1a2c21),
-                (this.y -= _0x1a2c21),
-                (this.z -= _0x1a2c21),
-                this
-              )
-            }
-            ['multiply'](_0x4f3541) {
-              return (
-                (this.x *= _0x4f3541.x),
-                (this.y *= _0x4f3541.y),
-                (this.z *= _0x4f3541.z),
-                this
-              )
-            }
-            ['multiplyScalar'](_0x12654b) {
-              return (
-                (this.x *= _0x12654b),
-                (this.y *= _0x12654b),
-                (this.z *= _0x12654b),
-                this
-              )
-            }
-            ['round']() {
-              return (
-                (this.x = Math.round(this.x)),
-                (this.y = Math.round(this.y)),
-                (this.z = Math.round(this.z)),
-                this
-              )
-            }
-            ['floor']() {
-              return (
-                (this.x = Math.floor(this.x)),
-                (this.y = Math.floor(this.y)),
-                (this.z = Math.floor(this.z)),
-                this
-              )
-            }
-            ['ceil']() {
-              return (
-                (this.x = Math.ceil(this.x)),
-                (this.y = Math.ceil(this.y)),
-                (this.z = Math.ceil(this.z)),
-                this
-              )
-            }
-            ['magnitude']() {
-              return Math.sqrt(
-                this.x * this.x + this.y * this.y + this.z * this.z
-              )
-            }
-            ['normalize']() {
-              let _0x4f0dff = this.magnitude
-              if (isNaN(_0x4f0dff)) {
-                _0x4f0dff = 0
-              }
-              return this.multiplyScalar(1 / _0x4f0dff)
-            }
-            ['forward']() {
-              const _0x3c2c24 = _0x40cffd
-                .fromObject(this)
-                .multiplyScalar(Math.PI / 180)
-              return new _0x40cffd(
-                -Math.sin(_0x3c2c24.z) * Math.abs(Math.cos(_0x3c2c24.x)),
-                Math.cos(_0x3c2c24.z) * Math.abs(Math.cos(_0x3c2c24.x)),
-                Math.sin(_0x3c2c24.x)
-              )
-            }
-            ['getDistance'](_0x53d82b) {
-              const [_0x5b6186, _0x170b95, _0x20cb58] = [
-                this.x - _0x53d82b.x,
-                this.y - _0x53d82b.y,
-                this.z - _0x53d82b.z,
-              ]
-              return Math.sqrt(
-                _0x5b6186 * _0x5b6186 +
-                  _0x170b95 * _0x170b95 +
-                  _0x20cb58 * _0x20cb58
-              )
-            }
-            ['getDistanceFromArray'](_0x51bd90) {
-              const [_0x4371f5, _0x3230b4, _0xa830af] = [
-                this.x - _0x51bd90[0],
-                this.y - _0x51bd90[1],
-                this.z - _0x51bd90[2],
-              ]
-              return Math.sqrt(
-                _0x4371f5 * _0x4371f5 +
-                  _0x3230b4 * _0x3230b4 +
-                  _0xa830af * _0xa830af
-              )
-            }
-            static ['fromArray'](_0x37451b) {
-              return new _0x40cffd(_0x37451b[0], _0x37451b[1], _0x37451b[2])
-            }
-            static ['fromObject'](_0x9f32d8) {
-              return new _0x40cffd(_0x9f32d8.x, _0x9f32d8.y, _0x9f32d8.z)
-            }
-          }
-          _0x4b842a.mathClass = _0x40cffd
-        },
-      },
-      _0x5da375 = {}
-    function _0x518d14(_0xe92355) {
-      var _0x37ced8 = _0x5da375[_0xe92355]
-      if (_0x37ced8 !== undefined) {
-        return _0x37ced8.exports
-      }
-      var _0x31ca91 = (_0x5da375[_0xe92355] = { exports: {} })
-      _0xac6993[_0xe92355](_0x31ca91, _0x31ca91.exports, _0x518d14)
-      return _0x31ca91.exports
-    }
-    !(function () {
-      _0x518d14.g = (function () {
-        if (typeof globalThis === 'object') {
-          return globalThis
-        }
-        try {
-          return this || new FunctionNet('return this')()
-        } catch (_0x5cf35d) {
-          if (typeof window === 'object') {
-            return window
-          }
-        }
-      })()
-    })()
     var _0x45fa42 = {}
     !(function () {
       var _0xf087b6 = _0x45fa42,
@@ -417,7 +10,7 @@
         _0x576290 = 0,
         _0x2b4ee2 = null,
         _0x5971ad = 0
-      const _0x1b1ac3 = new Set(),
+      const Weapons = new Set(),
         Weapon1 = {
           name: 'Airsoft Gun',
           item: '-2084633992',
@@ -430,7 +23,7 @@
           name: 'Desert Eagle',
           item: '-1716589765',
         },
-        _0xf2c705 = [Weapon1, Weapon2, Weapon3]
+        weaponList = [Weapon1, Weapon2, Weapon3]
 
       onNet('arp-bulletclub:gameStarted', (_0x5ad20c, _0x4fdc60, _0x5884b1) => {
           return _0x278f2e(_0x5ad20c, _0x4fdc60, _0x5884b1)
@@ -443,14 +36,14 @@
       })
 
       onNet('arp-bulletclub:modifySettings', () => {
-        return _0x12898d()
+        return modifySettings()
       })
-      onNet('arp-bulletclub:viewLeaderBoard', (_0x11fb49) => {
-        _0x4890c3(_0x11fb49.type)
+      onNet('arp-bulletclub:viewLeaderBoard', (leaderboard) => {
+        _0x4890c3(leaderboard.type)
       })
 
       onNet('arp-bulletclub:getWeapon', () => {
-        _0xc88e74()
+        getWeapon()
       })
 
       onNet('arp-bulletclub:resetGameState', () => {
@@ -458,34 +51,32 @@
       })
 
       onNet('arp-bulletclub:gameReset', () => {
-        _0x1ed868()
+        gameReset()
       })
 
-      RegisterInterfaceCallback('arp-bulletclub:purchaseWeapon', (_0x396fca, _0x3c4f20) => {
+      RegisterInterfaceCallback('arp-bulletclub:purchaseWeapon', (data, _0x3c4f20) => {
           const _0x4470e0 = { ok: true, message: 'done' },
             _0x7d11ee = { data: {}, meta: _0x4470e0 }
           _0x3c4f20(_0x7d11ee)
-          const GetItemMeta = exports['arp-inventory'].GetItemsByItemMetaKV(_0x396fca?.key?.weapon, 'BulletClub', true)
+          const GetItemMeta = exports['arp-inventory'].GetItemsByItemMetaKV(data?.key?.weapon, 'BulletClub', true)
           if (GetItemMeta.length > 0) {
             return emit('DoLongHudText', 'You already have this weapon.', 2)
           }
-          const _0x580ce9 = { BulletClub: true, _hideKeys: ['BulletClub']}
+          const metaData = { BulletClub: true, _hideKeys: ['BulletClub']}
           emit(
-            'player:receiveItem', _0x396fca?.key?.weapon, 1, false, _0x580ce9, JSON.stringify({}))
+            'player:receiveItem', data?.key?.weapon, 1, false, metaData, JSON.stringify({}))
         }
       )
 
       onNet('arp-bulletclub:updateHud', (_0x21a871) => {
-        if (!_0x3d9643('bullet_club')) {
+        if (!pZone('bullet_club')) {
           return
         }
-        const _0x2caba9 = { show: true, title: 'Bullet Club Range', values: _0x21a871, }
-        exports['arp-interface'].sendAppEvent('status-hud', _0x2caba9)
+        const hudStatus = { show: true, title: 'Bullet Club Range', values: _0x21a871, }
+        exports['arp-interface'].sendAppEvent('status-hud', hudStatus)
       })
       onNet('current-items', () => {
-        if (_0x3d9643('bullet_club')) {
-          return
-        }
+        if (pZone('bullet_club')) { return }
         _0x450127()
       })
       const TargetPeds = [
@@ -588,7 +179,7 @@
           }, 100)
         },
         
-        _0x12898d = async () => {
+        modifySettings = async () => {
           let _0x2147dc
           const _0x39fa20 = {
               id: 'easy',
@@ -677,14 +268,14 @@
           exports['arp-interface'].showContextMenu(_0x3cbfda)
         },
 
-        _0xc88e74 = () => {
+        getWeapon = () => {
           const _0x18d817 = [],
             _0x349ca3 = {
               icon: 'info-circle',
               title: 'Weapon List',
             }
           _0x18d817.push(_0x349ca3)
-          for (const _0x1ba8b2 of _0xf2c705) {
+          for (const _0x1ba8b2 of weaponList) {
             const _0xfe183a = {
               icon: 'circle',
               title: _0x1ba8b2.name,
@@ -698,7 +289,7 @@
 
         _0x450127 = () => {
           let _0x3110c1 = false
-          for (const _0x55c525 of _0xf2c705) {
+          for (const _0x55c525 of weaponList) {
             const _0x5e7a1a = exports[
               'arp-inventory'
             ].GetItemsByItemMetaKV(_0x55c525.item, 'BulletClub', true)
@@ -715,28 +306,27 @@
           _0x3110c1 &&
             emit('DoLongHudText', 'Range weapons have been returned...', 1)
         },
-        _0x3d9643 = (_0x569395) => {
-          return _0x1b1ac3.has(_0x569395)
+        pZone = (bulletclubWeapon) => {
+          return Weapons.has(bulletclubWeapon)
         }
-      onNet('arp-polyzone:enter', (_0x27dff7) => {
-        _0x1b1ac3.add(_0x27dff7)
+      onNet('arp-polyzone:enter', (bulletclubWeapon) => {
+        Weapons.add(bulletclubWeapon)
       })
 
-
-      onNet('arp-polyzone:exit', (_0x40fc2) => {
-        _0x1b1ac3.delete(_0x40fc2)
+      onNet('arp-polyzone:exit', (bulletclubWeapon) => {
+        Weapons.delete(bulletclubWeapon)
       })
 
-      onNet('arp-polyzone:enter', (_0x38da11) => {
-        if (_0x38da11 !== 'bullet_club') {
+      onNet('arp-polyzone:enter', (zone) => {
+        if (zone !== 'bullet_club') {
           return
         }
         emitNet('arp-bulletclub:enteredBuilding')
         SetPedInfiniteAmmoClip(PlayerPedId(), true)
       })
 
-      onNet('arp-polyzone:exit', (_0x587634) => {
-          if (_0x587634 !== 'bullet_club') {
+      onNet('arp-polyzone:exit', (zone) => {
+          if (zone !== 'bullet_club') {
             return
           }
         exports['arp-interface'].sendAppEvent('status-hud', _0x208bee)
@@ -777,16 +367,7 @@
                   0,
                   0
                 )
-            TaskGoStraightToCoord(
-              _0x2b4ee2,
-              _0x12bdbd,
-              _0xfb2288,
-              _0xa89cca,
-              10,
-              20000,
-              0,
-              0
-            )
+            TaskGoStraightToCoord( _0x2b4ee2, _0x12bdbd, _0xfb2288, _0xa89cca, 10, 20000, 0, 0)
           }
           return _0x8affc
         },
@@ -817,7 +398,7 @@
           _0x2b4ee2 = null
           _0x5971ad = 0
         },
-        _0x1ed868 = () => {
+        gameReset = () => {
           _0x5f16c3 = false
           DeleteEntity(_0x2b4ee2)
           _0x5d255e()
@@ -839,166 +420,113 @@
               : Math.random() * _0x41413b
           )
         },
-        _0x1a5e7c = () => {
-          console.log('[Bullet Club] Initializing zones...')
-          const _0x3d9631 = {
-              x: -821.33,
-              y: -796.58,
-              z: 19.43,
-            },
-            _0x20c227 = {
-              heading: 0,
-              minZ: 18.43,
-              maxZ: 22.83,
-              zoneEvents: 'arp-bulletclub:updateHud',
-              data: { id: 'bullet_club' },
-              debugPoly: false,
-            }
-          exports['arp-polyzone'].AddBoxZone(
-            'bullet_club',
-            _0x3d9631,
-            22.9,
-            24.6,
-            _0x20c227
-          )
-          const _0x3e78ec = {
-              x: -830,
-              y: -796.47,
-              z: 19.43,
-            },
-            _0x36b946 = {
-              heading: 0,
-              minZ: 18.51,
-              maxZ: 19.31,
-              data: { id: 'bullet_club_controls' },
-              debugPoly: false,
-            }
-          exports['arp-polytarget'].AddBoxZone(
-            'bullet_club_controls',
-            _0x3e78ec,
-            3.85,
-            0.3,
-            _0x36b946
-          )
-          const _0x63a7be = {
-              x: -834.04,
-              y: -798.08,
-              z: 19.42,
-            },
-            _0x57ca2d = {
-              heading: 0,
-              minZ: 19.52,
-              maxZ: 20.42,
-              data: { id: 'bullet_club_leaderboards' },
-              debugPoly: false,
-            }
-          exports['arp-polytarget'].AddBoxZone(
-            'bullet_club_leaderboards',
-            _0x63a7be,
-            1.5,
-            0.2,
-            _0x57ca2d
-          )
+
+        initializeZones = () => {
+          console.log( '[Bullet Club] Initializing zones...' )
+          const coords = { x: -821.33, y: -796.58, z: 19.43 },
+          coordsMisc = { heading: 0, minZ: 18.43, maxZ: 22.83, zoneEvents: 'arp-bulletclub:updateHud', data: { id: 'bullet_club' }, debugPoly: false }
+          exports['arp-polyzone'].AddBoxZone('bullet_club', coords, 22.9, 24.6, coordsMisc)
+
+          const controlsCoords = {x: -830, y: -796.47, z: 19.43},
+                controlsCoords2 = {heading: 0, minZ: 18.51, maxZ: 19.31, data: { id: 'bullet_club_controls' }, debugPoly: false}
+          exports['arp-polytarget'].AddBoxZone('bullet_club_controls', controlsCoords, 3.85, 0.3, controlsCoords2)
+
+          const leaderboardCoords = {x: -834.04, y: -798.08, z: 19.42},
+                leaderboardCoords2 = {heading: 0, minZ: 19.52, maxZ: 20.42, data: { id: 'bullet_club_leaderboards' }, debugPoly: false}
+          exports['arp-polytarget'].AddBoxZone('bullet_club_leaderboards', leaderboardCoords, 1.5, 0.2, leaderboardCoords2)
         },
-        _0x35dc5b = () => {
+
+        initializePeekEntries = () => {
           console.log('[Bullet Club] Initializing peek entries...')
-          const _0x4c168d = {
-              APXEvent: 'arp-bulletclub:startGame',
+          const startGame = {
+              triggerEvent: 'arp-bulletclub:startGame',
               id: 'bullet_club_start',
               icon: 'play',
               label: 'Start Game ($500)',
             },
-            _0x47f55f = { distance: { radius: 3.5 } }
-          exports['arp-interact'].AddPeekEntryByPolyTarget(
-            'bullet_club_controls',
-            [_0x4c168d],
-            _0x47f55f
-          )
-          const _0x51840 = {
-            APXEvent: 'arp-bulletclub:resetGameState',
+            distance = { distance: { radius: 3.5 } }
+          exports['arp-interact'].AddPeekEntryByPolyTarget('bullet_club_controls', [startGame], distance)
+
+          const resetGame = {
+            triggerEvent: 'arp-bulletclub:resetGameState',
             id: 'bullet_club_reset',
             icon: 'exclamation',
             label: 'Force Reset Game',
           }
-          exports['arp-interact'].AddPeekEntryByPolyTarget(
-            'bullet_club_controls',
-            [_0x51840],
+          exports['arp-interact'].AddPeekEntryByPolyTarget('bullet_club_controls', [resetGame],
             {
               distance: { radius: 3.5 },
               isEnabled: async () => {
-                const _0xd5045e = await exports[
-                  'arp-business'
-                ].IsEmployedAt('the_bullet_club')
-                return _0xd5045e
+                const isEmployed = await exports['arp-business'].IsEmployedAt('the_bullet_club')
+                return isEmployed
               },
             }
           )
-          const _0x7be691 = {
-            APXEvent: 'arp-bulletclub:modifySettings',
+
+          const changeSettings = {
+            triggerEvent: 'arp-bulletclub:modifySettings',
             id: 'bullet_club_setting',
             icon: 'cog',
             label: 'Change Settings',
           }
-          exports['arp-interact'].AddPeekEntryByPolyTarget(
-            'bullet_club_controls',
-            [_0x7be691],
+
+          exports['arp-interact'].AddPeekEntryByPolyTarget('bullet_club_controls', [changeSettings],
             {
               distance: { radius: 3.5 },
               isEnabled: async () => {
-                const _0x2faa0a = await exports[
-                  'arp-business'
-                ].IsEmployedAt('the_bullet_club')
-                return _0x2faa0a
+                const isEmployed = await exports['arp-business'].IsEmployedAt('the_bullet_club')
+                return isEmployed
               },
             }
           )
-          const _0x4acabc = {
-            APXEvent: 'arp-bulletclub:getWeapon',
+
+          const getWeapon = {
+            triggerEvent: 'arp-bulletclub:getWeapon',
             id: 'bullet_club_getweapon',
             icon: 'hand-paper',
             label: 'Get Weapon',
           }
-          exports['arp-interact'].AddPeekEntryByPolyTarget(
-            'bullet_club_controls',
-            [_0x4acabc],
-            _0x47f55f
-          )
-          const _0x5b2891 = {
-              APXEvent: 'arp-bulletclub:viewLeaderBoard',
+          exports['arp-interact'].AddPeekEntryByPolyTarget( 'bullet_club_controls', [getWeapon], distance )
+          
+          const leaderboardEasy = {
+              triggerEvent: 'arp-bulletclub:viewLeaderBoard',
               id: 'bullet_club_leaderboard',
               icon: 'list',
               label: 'Leaderboard (Easy)',
               parameters: { type: 'easy' },
             },
-            _0x2154d5 = {
-              APXEvent: 'arp-bulletclub:viewLeaderBoard',
+
+            leaderboardMedium = {
+              triggerEvent: 'arp-bulletclub:viewLeaderBoard',
               id: 'bullet_club_leaderboard_medium',
               icon: 'list',
               label: 'Leaderboard (Medium)',
               parameters: { type: 'medium' },
             },
-            _0x59eb2c = {
-              APXEvent: 'arp-bulletclub:viewLeaderBoard',
+
+            leaderboardHard = {
+              triggerEvent: 'arp-bulletclub:viewLeaderBoard',
               id: 'bullet_club_leaderboard_hard',
               icon: 'list',
               label: 'Leaderboard (Hard)',
               parameters: { type: 'hard' },
             },
-            _0x377aa2 = {
-              APXEvent: 'arp-bulletclub:viewLeaderBoard',
+
+            leaderboardAimbot = {
+              triggerEvent: 'arp-bulletclub:viewLeaderBoard',
               id: 'bullet_club_leaderboard_aimbot',
               icon: 'list',
               label: 'Leaderboard (Aimbot)',
               parameters: { type: 'aimbot' },
             }
-          exports['arp-interact'].AddPeekEntryByPolyTarget(
-            'bullet_club_leaderboards',
-            [_0x5b2891, _0x2154d5, _0x59eb2c, _0x377aa2],
-            _0x47f55f
+
+          exports['arp-interact'].AddPeekEntryByPolyTarget('bullet_club_leaderboards',
+            [leaderboardEasy, leaderboardMedium, leaderboardHard, leaderboardAimbot],
+            distance
           )
         }
       setImmediate(() => {
-        console.log('[Bullet Club] Loaded.'), _0x1a5e7c(), _0x35dc5b()
+        console.log('[Bullet Club] Loaded.'), initializeZones(), initializePeekEntries()
       })
     })()
   })()
