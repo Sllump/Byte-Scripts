@@ -22,10 +22,6 @@ local modes = {
         gameTargets = 100,
     }
 }
--- local input = 'aimbot',
---         Time = 0,
---         Targets = 0,
---         Mode = nil
 
 function UpdateHud()
     TriggerEvent('bd-bulletclub:updateHud', -1, [ 'Status: ' .. (isPlaying ? 'Active' : 'Pending') +  ' | Difficulty: ' .. input,  'Score: ' .. score  ])
@@ -53,8 +49,8 @@ RegisterNetEvent('bd-bulletclub:startGame', function(GameMode)
     end
 end)
 
-RegisterNetEvent('bd-bulletclub:updateSettings', function(Gamer)
-    isPlaying || ((input = Gamer.difficulty), (strafe = Gamer.strafeEnabled),
+RegisterNetEvent('bd-bulletclub:updateSettings', function(Settings)
+    isPlaying || ((input = Settings.difficulty), (strafe = Settings.strafeEnabled),
     UpdateHud())
 end)
 
