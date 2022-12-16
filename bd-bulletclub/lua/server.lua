@@ -68,7 +68,7 @@ RegisterNetEvent('bd-bulletclub:gameCompleted', function(source, score)
         TriggerEvent('bd-bulletclub:updateHud', -1, [ 'Status: Pending | Difficulty: ' .. input,  'Score: ' .. score,  'Targets Remaining: ' .. Enemies, 'Strafe Enabled' .. (strafe ? 'true' : 'false')])
     end
     TriggerEvent('player:receiveItem', source, 'bclubtoken', 1)
-    local user = exports["arp-base"]:getModule("Player"):GetUser(src)
+    local user = exports["bd-base"]:getModule("Player"):GetUser(src)
     local character = user:getCurrentCharacter()
     if ( not character ) then 
         return 
